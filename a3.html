@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p>Click the button to evalulate Javascript Expression</p>
+ <p id="result"></p>
+ <button onclick="myFunction()">Try it</button>
+ <script>
+    function myFunction() {
+        var x =10;
+        var y =20;
+        var a="eq1= " +eval("x+y")+"<BR>";
+        var b="eq2= " +eval("2*2")+"<br>";
+        var c="eq3= " +eval("y-x")+"<br>";
+        var res = a + b + c //
+        document.getElementById("result").innerHTML=res;
+
+
+    }
+ </script>
+</body>
+</html>
